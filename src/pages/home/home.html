@@ -1,0 +1,113 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <div padding>
+    <div class="bar bar-header">
+
+        <div class="tabs tabs-icon-left" >
+            <a class="tab-item"  >
+            
+            <img src="./assets/imgs/bb.png" >
+            
+            </a>
+            <a class="tab-item">
+              MOVIES
+            </a>
+            <a class="tab-item">
+              TVSHOWS
+            </a>
+            <a class="tab-item">
+              WEBSERIES
+            </a>
+            
+          
+          
+            <ion-searchbar (ionInput)="getItems($event)" style="width:20%; float:right; "></ion-searchbar>
+    
+            
+          
+          </div>
+          </div>
+    </div>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background-color: black;">
+    <ion-img style="width: 50%; height: 50%;position:absolute;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    top:26%;
+    transform:translateY(-50%);" src=""></ion-img>
+    <div class="brading">
+    <img src="./assets/imgs/icons.png" >
+    
+    </div>
+    <div id="middle">
+    <img src="./assets/imgs/list.png" >
+    </div>
+   
+    <ion-content class="card-background-page" style="top:80%;direction: X;">
+      <h2>Latest Releases</h2>
+      <ion-card>
+        <img src=""/>
+        
+      </ion-card>
+    
+      <ion-card>
+        <img src=""/>
+       
+      </ion-card>
+    
+      <ion-card>
+        <img src=""/>
+        
+      </ion-card>
+    
+</ion-content>
+</ion-content>
+<style>
+ .tabs-icon-left .tab-item {
+    color: white;
+    padding: 14px 26px;
+    overflow: hidden;
+    width:100%;
+    align-items: center;
+    font-family: serif;
+    height:60%;
+    font-size: 12px;
+  }
+.brading img {
+  position:absolute;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    top:60%;
+    transform:translateY(-50%);
+  }
+#middle img{
+  position:absolute;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    top:70%;
+    transform:translateY(-50%);
+}
+
+.card-background-page {
+
+ion-card {
+
+}
+
+
+}
+</style>
